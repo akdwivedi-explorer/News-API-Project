@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #212121;
+    --card-color: #fff3f3;
+}
+
+.dark-theme{
+    --primary-color: #212121;
+    --secondary-color: #fff;
+    --card-color: #fff;
+}
+
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    background: #212121;
+    box-shadow: 0 0 20px rgb(126, 125, 125);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.search-container{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.search-container #search-input{
+    padding: 10px 20px;
+    max-width: 400px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    border: 1px solid #fff;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.search-container #search-button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: #138065;
+    color: var(--primary-color);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .logo{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.logo img{
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.navbar #icon{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+#blog-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 280px;
+    border: 1px solid #2d4c50;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+    background: var(--card-color);
+    text-align: center;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+@media(max-width:500px){
+    nav{
+        padding: 0 20px;
+    }
+    .navbar .logo{
+        font-size: 1.8rem;
+        margin-right: 3.1px;
+    }
+    #search-input{
+        width: 150px;
+        padding: 10px 10px;
+    }
+    .blog-card{
+        width: 100%;
+    }
+}
