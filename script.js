@@ -1,6 +1,6 @@
 /* API */
 
-const apiKey = "a901fd24b9c54313bc7f071b87493cec"
+const apiKey = ""
 const blogContainer = document.getElementById("blog-container")
 
 async function fetchRandomNews(){
